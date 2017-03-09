@@ -21,7 +21,7 @@
     
     [[CommonImageManager sharedInstance] configureBundlesName:@[@"MainResource", @"TargetResource"]];
     
-    UIImageView *image0 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"QQ20170306-213441"]];
+    UIImageView *image0 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"image_rate_all_screen_bg.jpg"]];
     image0.frame = CGRectMake(100, 100, 100, 100);
     [self.view addSubview:image0];
     

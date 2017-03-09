@@ -84,6 +84,11 @@ static NSString *encryptKey = @"defaultKey";
 
 #pragma mark - Private
 - (NSString *)getImageOriginName:(NSString *)name {
+    NSRange withoutDotTailRange = [name rangeOfString:@"." options:NSBackwardsSearch];
+    if(withoutDotTailRange.length && withoutDotTailRange.location != NSNotFound) {
+        name = [name substringToIndex:withoutDotTailRange.location];
+    }
+    
     NSRange originScaleMarkRange = [name rangeOfString:@"@" options:NSBackwardsSearch];
     if(originScaleMarkRange.length == 0 || originScaleMarkRange.location == NSNotFound) {
         return name;
