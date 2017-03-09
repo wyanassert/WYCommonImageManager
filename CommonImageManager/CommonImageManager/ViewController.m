@@ -21,9 +21,8 @@
     
     [[CommonImageManager sharedInstance] configureBundlesName:@[@"MainResource", @"TargetResource"]];
     
-    UIImageView *image0 = [[UIImageView alloc] init];
+    UIImageView *image0 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"QQ20170306-213441"]];
     image0.frame = CGRectMake(100, 100, 100, 100);
-    image0.image = [UIImage imageNamed:@"QQ20170306-213441"];
     [self.view addSubview:image0];
     
     UIImageView *image1 = [[UIImageView alloc] init];
