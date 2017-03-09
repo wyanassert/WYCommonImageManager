@@ -1,5 +1,5 @@
 ## WYCommonImageManager
-encrypt image resource in iOS Project with change code.
+encrypt image resource in iOS Project without change source code.
 
 Based on [RNCryptor](https://github.com/RNCryptor/RNCryptor) and [CXYRNCryptorTool](https://github.com/iHongRen/CXYRNCryptorTool)
 
