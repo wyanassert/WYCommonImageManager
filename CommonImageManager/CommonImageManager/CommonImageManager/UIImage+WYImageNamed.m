@@ -8,6 +8,7 @@
 
 #import "UIImage+WYImageNamed.h"
 #import <objc/runtime.h>
+#import "CommonImageManager.h"
 
 @implementation UIImage (WYImageNamed)
 
@@ -37,8 +38,12 @@
 
 
 + (UIImage *)wy_imageNamed:(NSString *)name {
-    
-    return [self wy_imageNamed:name];
+    UIImage *image = [[CommonImageManager sharedInstance] getImageWithName:name];
+    if(image) {
+        return image;
+    } else {
+        return [self wy_imageNamed:name];
+    }
 }
 
 @end

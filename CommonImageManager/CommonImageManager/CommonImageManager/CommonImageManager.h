@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class UIImage;
+
 @interface CommonImageManager : NSObject
 
 + (instancetype)sharedInstance;
 
 - (void)configureBundlesName:(NSArray<NSString *> *)bundleNameArray;
+
+- (UIImage *)getImageWithName:(NSString *)name;
 
 @end
