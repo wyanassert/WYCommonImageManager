@@ -9,9 +9,10 @@
 #import "CommonImageManager.h"
 #import <UIKit/UIKit.h>
 #import "RNDecryptor.h"
+#import "NSString+WYMD5HexDigest.h"
 
 static NSString *tailIdentifier = @"cxy";
-static NSString *encryptKey = @"wyan";
+static NSString *encryptKey = @"defaultKey";
 
 @interface CommonImageManager ()
 
@@ -51,8 +52,11 @@ static NSString *encryptKey = @"wyan";
 }
 
 - (UIImage *)getImageWithName:(NSString *)name {
-    NSString *originImageName = [self transNameToMD5:[self getImageOriginName:name]];
-    NSString *scaleImageName = [self transNameToMD5:[NSString stringWithFormat:@"%@@%@x", originImageName, @([UIScreen mainScreen].scale).stringValue]];
+    NSString *originImageName = [self getImageOriginName:name];
+    NSString *scaleImageName = [NSString stringWithFormat:@"%@@%@x", originImageName, @([UIScreen mainScreen].scale).stringValue];
+    
+    originImageName = [self transNameToMD5:originImageName];
+    scaleImageName = [self transNameToMD5:scaleImageName];
     
     NSString *findName = nil;
     NSBundle *findBundle = nil;
@@ -89,7 +93,7 @@ static NSString *encryptKey = @"wyan";
 }
 
 - (NSString *)transNameToMD5:(NSString *)name {
-    return name;
+    return [name wy_md5HexDigest];
 }
 
 - (UIImage *)readImageWithName:(NSString *)name bundle:(NSBundle *)bundle {

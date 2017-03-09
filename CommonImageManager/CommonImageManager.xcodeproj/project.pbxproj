@@ -17,12 +17,11 @@
 		9370C3FF1E70F88800252979 /* MainResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9370C3FD1E70F88800252979 /* MainResource.bundle */; };
 		9370C4001E70F88800252979 /* TargetResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9370C3FE1E70F88800252979 /* TargetResource.bundle */; };
 		9370C4031E71037100252979 /* UIImage+WYImageNamed.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370C4021E71037100252979 /* UIImage+WYImageNamed.m */; };
-		9370C4061E71049300252979 /* image_loading_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9370C4041E71049300252979 /* image_loading_2@2x.png */; };
-		9370C4071E71049300252979 /* QQ20170306-213441.png in Resources */ = {isa = PBXBuildFile; fileRef = 9370C4051E71049300252979 /* QQ20170306-213441.png */; };
 		9370C4131E7127E400252979 /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370C40C1E7127E400252979 /* RNCryptor.m */; };
 		9370C4141E7127E400252979 /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370C40E1E7127E400252979 /* RNCryptorEngine.m */; };
 		9370C4151E7127E400252979 /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370C4101E7127E400252979 /* RNDecryptor.m */; };
 		9370C4161E7127E400252979 /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370C4121E7127E400252979 /* RNEncryptor.m */; };
+		9370C4191E712A8300252979 /* NSString+WYMD5HexDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370C4181E712A8300252979 /* NSString+WYMD5HexDigest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +41,6 @@
 		9370C3FE1E70F88800252979 /* TargetResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TargetResource.bundle; sourceTree = "<group>"; };
 		9370C4011E71037100252979 /* UIImage+WYImageNamed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WYImageNamed.h"; sourceTree = "<group>"; };
 		9370C4021E71037100252979 /* UIImage+WYImageNamed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WYImageNamed.m"; sourceTree = "<group>"; };
-		9370C4041E71049300252979 /* image_loading_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_loading_2@2x.png"; sourceTree = "<group>"; };
-		9370C4051E71049300252979 /* QQ20170306-213441.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QQ20170306-213441.png"; sourceTree = "<group>"; };
 		9370C4091E7127E400252979 /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
 		9370C40A1E7127E400252979 /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
 		9370C40B1E7127E400252979 /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
@@ -54,6 +51,8 @@
 		9370C4101E7127E400252979 /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
 		9370C4111E7127E400252979 /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
 		9370C4121E7127E400252979 /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
+		9370C4171E712A8300252979 /* NSString+WYMD5HexDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WYMD5HexDigest.h"; sourceTree = "<group>"; };
+		9370C4181E712A8300252979 /* NSString+WYMD5HexDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WYMD5HexDigest.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +90,6 @@
 				9370C3E41E70F51B00252979 /* AppDelegate.m */,
 				9370C3E61E70F51B00252979 /* ViewController.h */,
 				9370C3E71E70F51B00252979 /* ViewController.m */,
-				9370C4041E71049300252979 /* image_loading_2@2x.png */,
-				9370C4051E71049300252979 /* QQ20170306-213441.png */,
 				9370C3FD1E70F88800252979 /* MainResource.bundle */,
 				9370C3FE1E70F88800252979 /* TargetResource.bundle */,
 				9370C3E91E70F51B00252979 /* Main.storyboard */,
@@ -120,6 +117,8 @@
 				9370C3F91E70F63E00252979 /* CommonImageManager.m */,
 				9370C4011E71037100252979 /* UIImage+WYImageNamed.h */,
 				9370C4021E71037100252979 /* UIImage+WYImageNamed.m */,
+				9370C4171E712A8300252979 /* NSString+WYMD5HexDigest.h */,
+				9370C4181E712A8300252979 /* NSString+WYMD5HexDigest.m */,
 			);
 			path = CommonImageManager;
 			sourceTree = "<group>";
@@ -200,12 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9370C3FF1E70F88800252979 /* MainResource.bundle in Resources */,
-				9370C4071E71049300252979 /* QQ20170306-213441.png in Resources */,
 				9370C3F01E70F51B00252979 /* LaunchScreen.storyboard in Resources */,
 				9370C4001E70F88800252979 /* TargetResource.bundle in Resources */,
 				9370C3ED1E70F51B00252979 /* Assets.xcassets in Resources */,
 				9370C3EB1E70F51B00252979 /* Main.storyboard in Resources */,
-				9370C4061E71049300252979 /* image_loading_2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +217,7 @@
 				9370C4031E71037100252979 /* UIImage+WYImageNamed.m in Sources */,
 				9370C3E81E70F51B00252979 /* ViewController.m in Sources */,
 				9370C3E51E70F51B00252979 /* AppDelegate.m in Sources */,
+				9370C4191E712A8300252979 /* NSString+WYMD5HexDigest.m in Sources */,
 				9370C4151E7127E400252979 /* RNDecryptor.m in Sources */,
 				9370C3FA1E70F63E00252979 /* CommonImageManager.m in Sources */,
 				9370C4161E7127E400252979 /* RNEncryptor.m in Sources */,
