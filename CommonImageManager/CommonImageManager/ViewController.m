@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CommonImageManager.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [[CommonImageManager sharedInstance] configureBundlesName:@[@"MainResource", @"TargetResource"]];
+    
+    UIImageView *image0 = [[UIImageView alloc] init];
+    image0.frame = CGRectMake(100, 100, 100, 100);
+    image0.image = [UIImage imageNamed:@"QQ20170306-213441"];
+    [self.view addSubview:image0];
+    
+    UIImageView *image1 = [[UIImageView alloc] init];
+    image1.frame = CGRectMake(100, 300, 100, 100);
+    image1.image = [UIImage imageNamed:@"image_loading_2"];
+    [self.view addSubview:image1];
+    
 }
 
 

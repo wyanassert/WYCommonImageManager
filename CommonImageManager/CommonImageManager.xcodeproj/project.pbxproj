@@ -13,6 +13,12 @@
 		9370C3EB1E70F51B00252979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9370C3E91E70F51B00252979 /* Main.storyboard */; };
 		9370C3ED1E70F51B00252979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9370C3EC1E70F51B00252979 /* Assets.xcassets */; };
 		9370C3F01E70F51B00252979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9370C3EE1E70F51B00252979 /* LaunchScreen.storyboard */; };
+		9370C3FA1E70F63E00252979 /* CommonImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370C3F91E70F63E00252979 /* CommonImageManager.m */; };
+		9370C3FF1E70F88800252979 /* MainResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9370C3FD1E70F88800252979 /* MainResource.bundle */; };
+		9370C4001E70F88800252979 /* TargetResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9370C3FE1E70F88800252979 /* TargetResource.bundle */; };
+		9370C4031E71037100252979 /* UIImage+WYImageNamed.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370C4021E71037100252979 /* UIImage+WYImageNamed.m */; };
+		9370C4061E71049300252979 /* image_loading_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9370C4041E71049300252979 /* image_loading_2@2x.png */; };
+		9370C4071E71049300252979 /* QQ20170306-213441.png in Resources */ = {isa = PBXBuildFile; fileRef = 9370C4051E71049300252979 /* QQ20170306-213441.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,14 @@
 		9370C3EC1E70F51B00252979 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9370C3EF1E70F51B00252979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9370C3F11E70F51B00252979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9370C3F81E70F63E00252979 /* CommonImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonImageManager.h; sourceTree = "<group>"; };
+		9370C3F91E70F63E00252979 /* CommonImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonImageManager.m; sourceTree = "<group>"; };
+		9370C3FD1E70F88800252979 /* MainResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MainResource.bundle; sourceTree = "<group>"; };
+		9370C3FE1E70F88800252979 /* TargetResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TargetResource.bundle; sourceTree = "<group>"; };
+		9370C4011E71037100252979 /* UIImage+WYImageNamed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WYImageNamed.h"; sourceTree = "<group>"; };
+		9370C4021E71037100252979 /* UIImage+WYImageNamed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WYImageNamed.m"; sourceTree = "<group>"; };
+		9370C4041E71049300252979 /* image_loading_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_loading_2@2x.png"; sourceTree = "<group>"; };
+		9370C4051E71049300252979 /* QQ20170306-213441.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QQ20170306-213441.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +72,15 @@
 		9370C3DF1E70F51B00252979 /* CommonImageManager */ = {
 			isa = PBXGroup;
 			children = (
+				9370C3F71E70F63700252979 /* CommonImageManager */,
 				9370C3E31E70F51B00252979 /* AppDelegate.h */,
 				9370C3E41E70F51B00252979 /* AppDelegate.m */,
 				9370C3E61E70F51B00252979 /* ViewController.h */,
 				9370C3E71E70F51B00252979 /* ViewController.m */,
+				9370C4041E71049300252979 /* image_loading_2@2x.png */,
+				9370C4051E71049300252979 /* QQ20170306-213441.png */,
+				9370C3FD1E70F88800252979 /* MainResource.bundle */,
+				9370C3FE1E70F88800252979 /* TargetResource.bundle */,
 				9370C3E91E70F51B00252979 /* Main.storyboard */,
 				9370C3EC1E70F51B00252979 /* Assets.xcassets */,
 				9370C3EE1E70F51B00252979 /* LaunchScreen.storyboard */,
@@ -77,6 +96,17 @@
 				9370C3E11E70F51B00252979 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9370C3F71E70F63700252979 /* CommonImageManager */ = {
+			isa = PBXGroup;
+			children = (
+				9370C3F81E70F63E00252979 /* CommonImageManager.h */,
+				9370C3F91E70F63E00252979 /* CommonImageManager.m */,
+				9370C4011E71037100252979 /* UIImage+WYImageNamed.h */,
+				9370C4021E71037100252979 /* UIImage+WYImageNamed.m */,
+			);
+			path = CommonImageManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +167,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9370C3FF1E70F88800252979 /* MainResource.bundle in Resources */,
+				9370C4071E71049300252979 /* QQ20170306-213441.png in Resources */,
 				9370C3F01E70F51B00252979 /* LaunchScreen.storyboard in Resources */,
+				9370C4001E70F88800252979 /* TargetResource.bundle in Resources */,
 				9370C3ED1E70F51B00252979 /* Assets.xcassets in Resources */,
 				9370C3EB1E70F51B00252979 /* Main.storyboard in Resources */,
+				9370C4061E71049300252979 /* image_loading_2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9370C4031E71037100252979 /* UIImage+WYImageNamed.m in Sources */,
 				9370C3E81E70F51B00252979 /* ViewController.m in Sources */,
 				9370C3E51E70F51B00252979 /* AppDelegate.m in Sources */,
+				9370C3FA1E70F63E00252979 /* CommonImageManager.m in Sources */,
 				9370C3E21E70F51B00252979 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
